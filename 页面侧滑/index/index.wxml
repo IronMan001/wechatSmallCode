@@ -1,0 +1,60 @@
+<!--pages/driver/supplier_info/supplier_info.wxml-->
+
+<view class="container">
+
+  <view class="sp_default_swit">
+    <view class="sp_default_text">设为默认供应商</view>
+    <switch class="switch" bindchange="setDefault"></switch>
+  </view>
+
+  <view class="py_info">
+    
+  
+    <view class="m_contan" >
+     
+     <view class="play_ground">
+        <view class="ply_item" wx:for="{{supplier_info_types_arr}}" wx:key="index">
+          <text class="{{big_index==index?'big':'small'}}">{{item.material_playground_name}}</text>
+          <view class="bindline {{big_index==index?'show':'noshow'}}" ></view>
+        </view>
+      </view>
+      <view class="line"></view> 
+        <swiper bindchange="swiperBtn" class="swiper">
+        <block wx:for="{{supplier_info_types_arr}}" wx:for-item="info">
+          <swiper-item>
+
+            <block wx:for="{{info.material_name}}" wx:for-index="indx" wx:for-item="material">
+              <view>
+              <view class="line {{indx!=0?'mater_line':'mater_line_hidden'}}"></view> 
+               
+                <view class="material_name">
+                  <text>{{material.m_name}}</text>
+                  <image class="sup_title {{(material.paidui_info==1)?'sup_show':'sup_hidden'}}" src="./res/sup_title.png"></image>
+                </view>
+                <view class="sm_item">
+                  <view class="sm_num">
+                    <text class="plate_paidui">{{material.paidui}}</text><text class="unit">辆</text>
+                    <view class="item_text">当前排队车辆</view>
+                  </view>
+
+                  <view class="sm_num2">
+                    <text class="num">{{material.size}}</text><text class="unit">{{material.unit}}</text><text class="num"></text><text class="num"></text><text class="unit"></text>
+                    <view class="item_text">物料规格</view>
+                  </view>
+
+                  <view class="sm_num">
+                    <text class="num">{{material.total}}</text><text class="unit">趟</text>
+                    <view class="item_text">总趟数</view>
+                  </view>
+                </view>
+              </view>
+             </block>
+          </swiper-item>
+        </block>
+      </swiper>  
+     
+    </view>
+  </view>
+
+
+</view>

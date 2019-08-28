@@ -1,0 +1,121 @@
+/* pages/driver/supplier_info/supplier_info.wxss */
+.container{
+    background-color: #fafafa;
+}
+.sp_default_swit{
+  height: 96rpx;
+  margin-top: 30rpx;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.sp_default_text{
+  text-align: left;
+  width: 46%;
+  font-size: 30rpx;
+}
+.switch{
+  width: 46%;
+  text-align: right;
+  color: #3965ff;
+}
+.sm_item{
+  display: flex;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.py_info{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 40rpx;
+}
+.play_ground{
+  font-size: 30rpx;
+  height: 92rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx
+}
+.ply_item{
+  margin-left: 34rpx;
+}
+.ply_item:first-child{
+  margin-left: 0;
+}
+.material_name{
+  font-size: 30rpx;
+  margin-top: 40rpx;
+}
+.plate_paidui{
+  color: #3965ff;
+  font-size:64rpx;
+  font-weight: 700;
+}
+.unit{
+  font-size: 24rpx;
+  color: 3965ff;
+}
+.item_text{
+  font-size: 24rpx;
+  color: #999;
+}
+.num{
+  font-size: 64rpx;
+  font-weight: 700;
+  color: #333;
+}
+
+.sm_num{
+  width: 30%;
+  text-align: center;
+}
+.sm_num2{
+  width: 43%;
+  text-align: center;
+}
+.line{
+  height: 2rpx;
+  background-color: #e7e7e7;
+}
+.swiper{
+  height: 667px;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.mater_line{
+  margin-bottom: 40rpx;
+}
+
+.big{
+  font-size: 30rpx;
+  color: #333;
+  
+}
+.small{
+  font-size: 26rpx;
+  color: #999;
+}
+.bindline{
+  width: 90rpx;
+  height: 6rpx;
+  background-color: #3965ff;
+  margin-top: 20rpx;
+  position: absolute;
+  margin-left: 32rpx;
+}
+.show,.sup_show{
+  opacity: 1;
+}
+.noshow,.sup_hidden,.mater_line_hidden{
+  opacity: 0
+}
+.sup_title{
+  width: 102rpx;
+  height: 34rpx;
+  position: absolute;
+  margin-left: -20rpx;
+  margin-top: -30rpx;
+}
